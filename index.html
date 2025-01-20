@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Color Picker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div name="pickerHandler" id="pickerHandler">
+        <div class="pickerMasterCls">
+            <div class="pickerElemHeadCls">
+                <div class="pickerThemeCount">
+                    <label for="pickerCount" id="pickerCountLbl" name="pickerCountLbl" class="pickerCountLblCls">Select
+                        the combination count required</label>
+                    <select name="pickerCount" id="pickerCount" class="pickerCountSelectCls"
+                        onchange="colorPickPageHandle(event)">
+                        <option value="1" class="pickerCountOptCls">1</option>
+                        <option value="2" class="pickerCountOptCls">2</option>
+                        <option value="3" class="pickerCountOptCls">3</option>
+                        <option value="4" class="pickerCountOptCls">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pickerHeadCls">
+                <div class="pickerSecCls">
+                    <div class="pickerChildCls">
+                        <div class="colorPick1DetCls">
+                            <span class="colorPick1DetHexCls" id="colorPick1DetHex"
+                                name="colorPick1DetHex">#000000</span>
+                            <span class="colorPick1DetRGBCls" id="colorPick1DetRGB" name="colorPick1DetRGB">rgb(0, 0,
+                                0)</span>
+                        </div>
+                        <label for="colorPick1" class="colorPick1ForCls" name="colorPick1Lbl"
+                            id="colorPick1Lbl"></label>
+                        <input type="color" name="colorPick1" id="colorPick1" onchange="colorChangerLbl(event)">
+                    </div>
+                    <div class="pickerChildCls">
+                        <div class="colorPick2DetCls">
+                            <span class="colorPick2DetHexCls" id="colorPick2DetHex"
+                                name="colorPick2DetHex">#000000</span>
+                            <span class="colorPick2DetRGBCls" id="colorPick2DetRGB" name="colorPick2DetRGB">rgb(0, 0,
+                                0)</span>
+                        </div>
+                        <label for="colorPick2" class="colorPick2ForCls" name="colorPick2Lbl"
+                            id="colorPick2Lbl"></label>
+                        <input type="color" name="colorPick2" id="colorPick2" onchange="colorChangerLbl(event)">
+                    </div>
+                    <div class="pickerChildCls">
+                        <div class="colorPick3DetCls">
+                            <span class="colorPick3DetHexCls" id="colorPick3DetHex"
+                                name="colorPick3DetHex">#000000</span>
+                            <span class="colorPick3DetRGBCls" id="colorPick3DetRGB" name="colorPick3DetRGB">rgb(0, 0,
+                                0)</span>
+                        </div>
+                        <label for="colorPick3" class="colorPick3ForCls" name="colorPick3Lbl"
+                            id="colorPick3Lbl"></label>
+                        <input type="color" name="colorPick3" id="colorPick3" onchange="colorChangerLbl(event)">
+                    </div>
+                    <div class="pickerChildCls">
+                        <div class="colorPick4DetCls">
+                            <span class="colorPick4DetHexCls" id="colorPick4DetHex"
+                                name="colorPick4DetHex">#000000</span>
+                            <span class="colorPick4DetRGBCls" id="colorPick4DetRGB" name="colorPick4DetRGB">rgb(0, 0,
+                                0)</span>
+                        </div>
+                        <label for="colorPick4" class="colorPick4ForCls" name="colorPick4Lbl"
+                            id="colorPick4Lbl"></label>
+                        <input type="color" name="colorPick4" id="colorPick4" onchange="colorChangerLbl(event)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

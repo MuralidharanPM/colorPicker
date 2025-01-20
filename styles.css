@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+.pickerChildCls input {
+    display: none;
+}
+.pickerChildCls .colorPick1ForCls, .pickerChildCls .colorPick2ForCls, .pickerChildCls .colorPick3ForCls, .pickerChildCls .colorPick4ForCls {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    background-color: #000;
+}
+.pickerChildCls {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+.pickerHandlerCls1 .pickerSecCls>div:nth-child(1), .pickerHandlerCls2 .pickerSecCls>div:nth-child(1), .pickerHandlerCls2 .pickerSecCls>div:nth-child(2) , .pickerHandlerCls3 .pickerSecCls>div:nth-child(1), .pickerHandlerCls3 .pickerSecCls>div:nth-child(2), .pickerHandlerCls3 .pickerSecCls>div:nth-child(3){
+    display: flex;
+}
+.pickerHandlerCls1 .pickerSecCls>div:nth-child(2), .pickerHandlerCls1 .pickerSecCls>div:nth-child(3), .pickerHandlerCls1 .pickerSecCls>div:nth-child(4),
+.pickerHandlerCls2 .pickerSecCls>div:nth-child(3), .pickerHandlerCls2 .pickerSecCls>div:nth-child(4), .pickerHandlerCls3 .pickerSecCls>div:nth-child(4) {
+    display: none;
+}
+.pickerMasterCls {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#pickerHandler {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.pickerElemHeadCls {
+    width: 100%;
+    text-align: center;
+}
+.pickerThemeCount {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.pickerCountLblCls {
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vh;
+    display: flex;
+    flex-direction: column;
+}
+.pickerCountSelectCls {
+    width: 10vh;
+    height: 7vh;
+    text-align: center;
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-size: 6vh;
+    margin: auto;
+}
+.pickerSecCls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 65px 0px 20px 0px;
+}
+.pickerHeadCls {
+    width: 100%;
+}
+.colorPick1DetCls, .colorPick2DetCls, .colorPick3DetCls, .colorPick4DetCls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 100px;
+    max-width: 140px;
+    width: 100%;
+}
+.colorPick1DetHexCls, .colorPick1DetRGBCls, .colorPick2DetHexCls, .colorPick2DetRGBCls, .colorPick3DetHexCls, .colorPick3DetRGBCls, .colorPick4DetHexCls, .colorPick4DetRGBCls {
+    white-space: nowrap;
+}
