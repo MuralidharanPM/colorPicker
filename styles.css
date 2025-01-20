@@ -93,4 +93,5 @@ body {
 }
 .colorPick1DetHexCls, .colorPick1DetRGBCls, .colorPick2DetHexCls, .colorPick2DetRGBCls, .colorPick3DetHexCls, .colorPick3DetRGBCls, .colorPick4DetHexCls, .colorPick4DetRGBCls {
     white-space: nowrap;
+    font-size: 3vh;
 }
